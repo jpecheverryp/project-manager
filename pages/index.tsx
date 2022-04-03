@@ -1,7 +1,8 @@
-import { Box } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
+import Layout from '../components/layout/Layout';
 
-const index = () => {
-  return <Box>Hello World</Box>;
+const Home = () => {
+  return <Layout>Hello World</Layout>;
 };
 
-export default index;
+export default Home;
