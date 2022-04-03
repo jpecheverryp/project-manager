@@ -1,10 +1,13 @@
+import { Container } from '@chakra-ui/react';
 import Navbar from '../Navbar';
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <Container as={'main'} maxWidth={'container.lg'}>
+        {children}
+      </Container>
     </>
   );
 };
