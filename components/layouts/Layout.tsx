@@ -1,8 +1,10 @@
+import Navbar from '../Navbar';
+
 const Layout = ({ children }) => {
   return (
     <>
-      <nav>Hello Nav</nav>
-      {children}
+      <Navbar />
+      <main>{children}</main>
     </>
   );
 };

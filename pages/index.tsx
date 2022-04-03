@@ -1,8 +1,7 @@
-import { Container } from '@chakra-ui/react';
-import Layout from '../components/layout/Layout';
+import Layout from '../components/layouts/Layout';
 
 const Home = () => {
-  return <Layout>Hello World</Layout>;
+  return <>Hello World</>;
 };
 
 export default Home;
