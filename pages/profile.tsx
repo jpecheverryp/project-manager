@@ -1,4 +1,14 @@
-import { Box, Container, Heading, Image, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Heading,
+  Icon,
+  Image,
+  Text,
+} from '@chakra-ui/react';
+import { FaTrash, FaPen } from 'react-icons/fa';
 import { User } from '../data';
 const Profile = () => {
   return (
@@ -27,6 +37,16 @@ const Profile = () => {
         <Text mt={5} size={'md'}>
           E-Mail: <Text as={'span'}>{User.email}</Text>
         </Text>
+        <Flex gap={4} justifyContent={'center'} mt={5}>
+          <Button colorScheme={'blue'}>
+            <Icon as={FaPen} mr={1} />
+            <Text>Edit</Text>
+          </Button>
+          <Button colorScheme={'red'}>
+            <Icon as={FaTrash} mr={1} />
+            <Text as={'span'}> Delete</Text>
+          </Button>
+        </Flex>
       </Container>
     </>
   );
